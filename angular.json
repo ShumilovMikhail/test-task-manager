@@ -19,9 +19,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets"
             ],
             "styles": [
+              "driver.js/dist/driver.css",
               "src/styles.css"
             ]
           },

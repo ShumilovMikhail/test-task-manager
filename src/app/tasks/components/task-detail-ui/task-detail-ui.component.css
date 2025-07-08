@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.low {
+  @apply text-green-600;
+}
+.medium {
+  @apply text-yellow-600;
+}
+.high {
+  @apply text-red-600;
+}

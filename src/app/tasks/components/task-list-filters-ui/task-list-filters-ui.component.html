@@ -1,0 +1,32 @@
+@if(statusFilter(); as statusFilter) {
+  <ul class="w-[375px] items-center text-sm font-medium text-gray-950  border border-gray-300 rounded-xl sm:flex bg-gray-50 shadow-sm overflow-hidden" #filtersElement>
+    <li class="w-[125px] border-b border-gray-200 sm:border-b-0 sm:border-r">
+        <div class="flex items-center">
+
+            <input type="radio" value="all" name="status-radio" id="all" class="hidden peer" [checked]="statusFilter === 'all'" (change)="onStatusFilterChanged($event)">
+            <label for="all" class="w-full py-3  text-sm font-semibold text-gray-900 hover:bg-gray-200 transition-colors cursor-pointer text-center peer-checked:bg-gray-300">
+              Всe
+            </label>
+        </div>
+    </li>
+    <li class="w-[125px] border-b border-gray-200 sm:border-b-0 sm:border-r">
+        <div class="flex items-center">
+
+            <input  type="radio" value="in_progress" name="status-radio" id="in_progress" class="hidden peer" [checked]="statusFilter === 'in_progress'" (change)="onStatusFilterChanged($event)">
+            <label for="in_progress" class="w-full py-3  text-sm font-semibold text-gray-900 hover:bg-gray-200 transition-colors cursor-pointer text-center peer-checked:bg-gray-300">
+              В работе
+            </label>
+        </div>
+    </li>
+    <li class="w-[125px] border-b border-gray-200 sm:border-b-0 sm:border-r">
+        <div class="flex items-center">
+
+            <input type="radio" value="done" name="status-radio" id="done" class="hidden peer" [checked]="statusFilter === 'done'" (change)="onStatusFilterChanged($event)">
+            <label for="done" class="w-full py-3  text-sm font-semibold text-gray-900 hover:bg-gray-200 transition-colors cursor-pointer text-center peer-checked:bg-gray-300">
+              Завершенные
+            </label>
+        </div>
+    </li>
+
+</ul>
+}

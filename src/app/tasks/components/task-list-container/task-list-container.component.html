@@ -1,0 +1,15 @@
+@if(filteredTasks(); as tasks) {
+  <div class="w-6xl m-auto mt-4">
+    <app-task-list-filters-ui [statusFilter]="statusFilter()" (statusFilterChange)="onChangeStatusFilter($event)" (registerStep)="onRegisterStep($event)"></app-task-list-filters-ui>
+    <div class="mt-7">
+      <app-task-list-ui [tasks]="tasks" (selectTask)="onTaskSelected($event)" (registerStep)="onRegisterStep($event)"></app-task-list-ui>
+    </div>
+    @if(selectedTask(); as selectedTask) {
+      <app-task-detail-ui [task]="selectedTask" (close)="onModalClose()"></app-task-detail-ui>
+    }
+  </div>
+} @else {
+  <div class="w-full mt-7 flex justify-center text-center">
+    <p class="">Загрузка...</p>
+  </div>
+}

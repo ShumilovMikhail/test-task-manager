@@ -1,0 +1,15 @@
+@if (tasks(); as tasks) {
+  <ul class="flex gap-2.5 flex-wrap">
+  @for (task of tasks; track $index) {
+    <li class="flex flex-col w-90 h-40 border rounded-xl p-[16px] border-gray-200 shadow-sm hover:bg-gray-200 transition-colors cursor-pointer" (click)="onSelectTask(task.id)" #taskElement>
+      @if(task.status === 'done') {
+        <p class="inline-block w-28 text-center pt-1.5 pb-1.5 pr-4 pl-4 text-green-700 font-semibold text-sm bg-green-400 rounded-2xl">Выполнено</p>
+      } @else if(task.status === 'in_progress') {
+        <p class="inline-block w-28 text-center pt-1.5 pb-1.5 pr-4 pl-4 text-yellow-700 font-semibold text-sm bg-yellow-400 rounded-2xl">В работе</p>
+      }
+      <h3 class="mt-[16px] font-bold text-lg grow">{{task.title | truncate: 60}}</h3>
+      <p class="text-gray-400">До {{ task.deadline | date: 'dd.MM.yyyy' }}</p>
+    </li>
+  }
+</ul>
+}

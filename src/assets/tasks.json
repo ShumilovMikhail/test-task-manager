@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "status": "in_progress",
+    "deadline": "2025-07-15T23:59:59.000Z",
+    "priority": "high",
+    "title": "Исправить баг в форме логина и пароля в авторизации пользователя в приложении",
+    "description": "Пустое сообщение об ошибке при неверном пароле."
+  },
+  {
+    "id": 2,
+    "status": "done",
+    "deadline": "2025-07-10T18:00:00.000Z",
+    "priority": "medium",
+    "title": "Добавить тёмную тему",
+    "description": "Пользователь должен иметь возможность переключать тему."
+  },
+  {
+    "id": 3,
+    "status": "in_progress",
+    "deadline": "2025-07-20T12:00:00.000Z",
+    "priority": "low",
+    "title": "Обновить документацию API",
+    "description": "Добавить примеры запросов и ответы."
+  },
+  {
+    "id": 4,
+    "status": "done",
+    "deadline": "2025-07-05T09:00:00.000Z",
+    "priority": "high",
+    "title": "Рефакторинг компонента профиля",
+    "description": "Оптимизировать рендер и улучшить UX."
+  },
+  {
+    "id": 5,
+    "status": "in_progress",
+    "deadline": "2025-07-25T17:00:00.000Z",
+    "priority": "medium",
+    "title": "Добавить фильтр задач по приоритету",
+    "description": "Фильтр по low/medium/high."
+  },
+  {
+    "id": 6,
+    "status": "done",
+    "deadline": "2025-07-12T20:00:00.000Z",
+    "priority": "low",
+    "title": "Обновить зависимости npm",
+    "description": "Обновить пакеты до последних стабильных версий."
+  },
+  {
+    "id": 7,
+    "status": "in_progress",
+    "deadline": "2025-07-18T15:30:00.000Z",
+    "priority": "high",
+    "title": "Реализовать интерактивный тур",
+    "description": "Использовать Driver.js для 2–3 шагов."
+  },
+  {
+    "id": 8,
+    "status": "done",
+    "deadline": "2025-07-08T13:00:00.000Z",
+    "priority": "medium",
+    "title": "Проверить тесты на покрытие",
+    "description": "Увеличить покрытие до 80%."
+  },
+  {
+    "id": 9,
+    "status": "in_progress",
+    "deadline": "2025-07-22T10:00:00.000Z",
+    "priority": "low",
+    "title": "Оптимизировать загрузку изображений",
+    "description": "Lazy loading для больших картинок."
+  },
+  {
+    "id": 10,
+    "status": "done",
+    "deadline": "2025-07-03T11:00:00.000Z",
+    "priority": "high",
+    "title": "Настроить CI/CD",
+    "description": "Автоматическая сборка и деплой."
+  }
+]
